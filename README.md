@@ -1,26 +1,98 @@
-This is a bonus project I did from my DataCamp Data Science course: **Exploring Airbnb market trends**
+# 🗽 Exploring Airbnb Market Trends — New York City
 
-![nyc](https://github.com/user-attachments/assets/4dd3aa17-9be6-4d93-b8cb-212c24eeb362)
+> A DataCamp Data Science bonus project exploring NYC Airbnb listings using multi-format data ingestion and analysis.
 
-Welcome to New York City, one of the most-visited cities in the world. There are many Airbnb listings in New York City to meet the high demand for temporary lodging for travelers, which can be anywhere between a few nights to many months. In this project, we will take a closer look at the New York Airbnb market by combining data from multiple file types like `.csv`, `.tsv`, and `.xlsx`.
+![NYC Airbnb](https://github.com/user-attachments/assets/4dd3aa17-9be6-4d93-b8cb-212c24eeb362)
 
-Recall that **CSV**, **TSV**, and **Excel** files are three common formats for storing data. 
-Three files containing data on 2019 Airbnb listings are available to you:
+---
 
-**data/airbnb_price.csv**
-This is a CSV file containing data on Airbnb listing prices and locations.
-- **`listing_id`**: unique identifier of listing
-- **`price`**: nightly listing price in USD
-- **`nbhood_full`**: name of borough and neighborhood where listing is located
+## 📌 Project Overview
 
-**data/airbnb_room_type.xlsx**
-This is an Excel file containing data on Airbnb listing descriptions and room types.
-- **`listing_id`**: unique identifier of listing
-- **`description`**: listing description
-- **`room_type`**: Airbnb has three types of rooms: shared rooms, private rooms, and entire homes/apartments
+New York City is one of the most-visited cities in the world, and its Airbnb market reflects that — with thousands of listings ranging from short overnight stays to multi-month lodging. This project takes a closer look at the NYC Airbnb landscape by combining data from **three different file formats**: `.csv`, `.tsv`, and `.xlsx`.
 
-**data/airbnb_last_review.tsv**
-This is a TSV file containing data on Airbnb host names and review dates.
-- **`listing_id`**: unique identifier of listing
-- **`host_name`**: name of listing host
-- **`last_review`**: date when the listing was last reviewed
+The goal is to merge and analyse these datasets to surface key trends around pricing, room types, and listing activity across NYC's boroughs and neighbourhoods.
+
+---
+
+## 🗂️ Dataset
+
+All data covers **2019 Airbnb listings** in New York City, split across three source files:
+
+| File | Format | Description |
+|------|--------|-------------|
+| `data/airbnb_price.csv` | CSV | Listing prices and locations |
+| `data/airbnb_room_type.xlsx` | Excel | Room types and listing descriptions |
+| `data/airbnb_last_review.tsv` | TSV | Host names and last review dates |
+
+### Column Reference
+
+**`airbnb_price.csv`**
+- `listing_id` — Unique identifier of listing
+- `price` — Nightly listing price in USD
+- `nbhood_full` — Borough and neighbourhood name
+
+**`airbnb_room_type.xlsx`**
+- `listing_id` — Unique identifier of listing
+- `description` — Listing description
+- `room_type` — One of: `Shared room`, `Private room`, `Entire home/apt`
+
+**`airbnb_last_review.tsv`**
+- `listing_id` — Unique identifier of listing
+- `host_name` — Name of the listing host
+- `last_review` — Date of the most recent review
+
+---
+
+## 🛠️ Skills Demonstrated
+
+- **Multi-format data ingestion** — Reading `.csv`, `.xlsx`, and `.tsv` files with `pandas`
+- **Data merging** — Joining multiple DataFrames on a common key (`listing_id`)
+- **Data cleaning** — Handling inconsistent text casing, date parsing, and type conversion
+- **Exploratory Data Analysis (EDA)** — Summarising price distributions, room type breakdowns, and review activity
+- **Filtering & aggregation** — Borough-level and neighbourhood-level comparisons
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+```bash
+pip install pandas openpyxl
+```
+
+### Run the Notebook
+
+```bash
+jupyter notebook airbnb_market_trends.ipynb
+```
+
+---
+
+## 📊 Key Questions Explored
+
+- What is the average nightly price across NYC boroughs?
+- How are room types distributed across listings?
+- Which listings have the most recent reviews?
+- What are the most active neighbourhoods on Airbnb?
+
+---
+
+## 📁 Project Structure
+
+```
+├── data/
+│   ├── airbnb_price.csv
+│   ├── airbnb_room_type.xlsx
+│   └── airbnb_last_review.tsv
+├── airbnb_market_trends.ipynb
+└── README.md
+```
+
+---
+
+## 🎓 Course
+
+This project was completed as part of the **DataCamp Associate Data Scientist in Python** career track.
+
+---
