@@ -81,10 +81,10 @@ All data covers **2019 Airbnb listings** in New York City, split across three so
 
 | Metric | Value |
 |--------|-------|
-| 📅 First listing reviewed | 1 January 2019 |
-| 📅 Last listing reviewed | 9 July 2019 |
-| 🏠 Number of private rooms | 11,356 |
-| 💰 Average nightly price | USD 141.78 |
+| First listing reviewed | 1 January 2019 |
+| Last listing reviewed | 9 July 2019 |
+| Number of private rooms | 11,356 |
+| Average nightly price | USD 141.78 |
 
 ### 6.1 Review Activity
 
