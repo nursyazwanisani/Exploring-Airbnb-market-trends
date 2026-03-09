@@ -64,7 +64,7 @@ pip install pandas openpyxl
 ### Run the Notebook
 
 ```bash
-jupyter notebook airbnb_market_trends.ipynb
+jupyter notebook notebook.ipynb
 ```
 
 ---
@@ -85,7 +85,7 @@ jupyter notebook airbnb_market_trends.ipynb
 │   ├── airbnb_price.csv
 │   ├── airbnb_room_type.xlsx
 │   └── airbnb_last_review.tsv
-├── airbnb_market_trends.ipynb
+├── notebook.ipynb
 └── README.md
 ```
 
